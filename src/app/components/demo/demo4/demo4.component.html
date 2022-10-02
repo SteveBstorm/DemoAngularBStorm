@@ -1,0 +1,13 @@
+<p>demo4 works!</p>
+<button (click)="switchVisible()">click ici</button>
+<p *ngIf="isVisible else elsetemplate">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo rerum perferendis accusantium laudantium enim eum dolores provident officia quae earum, dolorum iste esse nihil maiores eos aspernatur error quidem assumenda!</p>
+<ng-template #elsetemplate>
+ <p appHighlight>machin bidule</p>
+</ng-template>
+<hr />
+<ul>
+  <li *ngFor="let eleve of tableau; let i = index; let impair = odd">
+   <p [ngClass]="{maclasse : impair}">{{i}} {{eleve}}</p>
+  </li>
+</ul>
+

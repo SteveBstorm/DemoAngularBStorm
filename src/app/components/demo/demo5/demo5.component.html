@@ -1,0 +1,9 @@
+<p>demo5 works!</p>
+<div style="border : 2px red solid">
+  <app-enfant
+      [toto]="fromParent"
+      (envoiEvent)="declencheeParEnfant($event)"
+      ></app-enfant>
+</div>
+
+<p>Contenu de l'enfant : {{fromChildren}}</p>

@@ -1,0 +1,7 @@
+<p>demo2 works!</p>
+<p>Valeur de myprop : {{myprop}}</p>
+<div>
+ Two Way <input [(ngModel)]="myprop">
+</div>
+<button (click)="changeValue()" [disabled]="myprop == '5'">Event binding</button>
+

@@ -1,0 +1,6 @@
+<p>demo6 works!</p>
+Etat de connexion : {{isConnected}}
+<br />
+<button (click)="login()" *ngIf="!isConnected">Connexion</button>
+<button (click)="logout()" *ngIf="isConnected">Déconnexion</button>
+<button (click)="getall()" >getall</button>
